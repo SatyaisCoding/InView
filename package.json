@@ -1,0 +1,13 @@
+{
+  "name": "inview",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "bun --cwd apps/web dev",
+    "dev:api": "bun --cwd apps/api run dev",
+    "dev": "bun run dev:web & bun run dev:api"
+  }
+}
